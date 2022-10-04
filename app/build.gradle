@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     dataBinding {
         enabled = true
@@ -62,7 +62,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_18.majorVersion
+        jvmTarget = JavaVersion.VERSION_17.majorVersion
     }
 }
 
