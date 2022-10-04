@@ -3,33 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pointer.wave.easyship">
 
+    <!-- 查看网络状态 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取手机状态和身份 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 拥有完全的网络访问权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许跨同一配置文件组中的配置文件进行交互 -->
     <uses-permission android:name="android.permission.INTERACT_ACROSS_PROFILES"
         tools:ignore="ProtectedPermissions" />
+    <!-- 重启设备的权限 -->
     <uses-permission android:name="android.permission.REBOOT"
         tools:ignore="ProtectedPermissions" />
+    <!-- 修改或删除您共享存储空间中的内容 -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
+    <!-- 请求安装文件包 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 所有文件访问权限 -->
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
+    <!-- 从您的媒体收藏中读取位置信息 -->
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <!-- 开机启动 -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 运行前台服务 -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 请求忽略电池优化 -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!--  -->
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!--  -->
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <!-- 查询所有软件包 -->
     <uses-permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
+    <!-- 控制震动 -->
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许应用程序收集组件使用情况统计信息 -->
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
+    <!-- 此应用可显示在其他应用上方 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <queries>
