@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/sp_20"
-        android:textColor="@color/white"
+        android:textColor="@color/text_black"
         android:text="更新日志"
         android:fitsSystemWindows="true"
         android:layout_marginBottom="@dimen/dp_20"
@@ -26,7 +26,7 @@
             android:id="@+id/log"
             android:layout_marginStart="@dimen/dp_20"
             android:layout_marginEnd="@dimen/dp_20"
-            android:textColor="@color/white"
+            android:textColor="@color/text_black"
             android:clickable="true"
             android:focusable="true"
             android:linksClickable="true"/>

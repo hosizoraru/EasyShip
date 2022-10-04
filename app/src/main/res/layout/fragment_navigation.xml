@@ -12,7 +12,7 @@
         android:layout_height="@dimen/dp_10"
         android:id="@+id/tabLayout"
         app:tabIndicator="@drawable/shape_indicator_select"
-        app:tabIndicatorColor="@color/indicator_color"
+        app:tabIndicatorColor="@color/text_black"
         app:tabIndicatorGravity="center"
         app:tabIndicatorHeight="@dimen/dp_10"
         app:tabGravity="fill"

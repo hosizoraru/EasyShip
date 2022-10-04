@@ -68,7 +68,7 @@ public class AboutFragment extends BaseFragment implements TouchFeedback.OnFeedB
         int id = view.getId();
         switch (id) {
             case R.id.group:
-                String url = "https://github.com/LumnyTool/EasyShip";
+                String url = "https://github.com/hosizoraru/EasyShip";
                 Intent intent = new Intent();
                 intent.setAction("android.intent.action.VIEW");
                 intent.setData(Uri.parse(url));
