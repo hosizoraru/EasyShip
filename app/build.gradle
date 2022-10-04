@@ -99,7 +99,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:+'
 
     // Coroutine 协程 https://developer.android.google.cn/kotlin/coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
 
     // Koin 依赖注入 https://insert-koin.io
     implementation "io.insert-koin:koin-android:3.2.2"
