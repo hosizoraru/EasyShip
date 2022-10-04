@@ -91,7 +91,7 @@ dependencies {
     // Retrofit 网络请求 https://github.com/square/retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.10'
-    implementation 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
@@ -99,10 +99,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:+'
 
     // Coroutine 协程 https://developer.android.google.cn/kotlin/coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
     // Koin 依赖注入 https://insert-koin.io
-    implementation "io.insert-koin:koin-android:3.2.2"
+    implementation 'io.insert-koin:koin-android:3.2.2'
 
     //WebSocket
     implementation 'org.java-websocket:Java-WebSocket:1.5.3'
@@ -111,5 +111,5 @@ dependencies {
 
     implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
 
-    implementation "androidx.viewpager2:viewpager2:1.1.0-beta01"
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-beta01'
 }
