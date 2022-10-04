@@ -39,7 +39,7 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build with Gradle
-      run: ./gradlew :app:packageRelease
+      run: ./gradlew assembleRelease
       
     - name: Upload release
       uses: actions/upload-artifact@v2
