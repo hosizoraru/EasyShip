@@ -39,7 +39,7 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease --stacktrace
-             ./gradlew assembleRelease_mini  --stacktrace
+        run: ./gradlew assembleRelease_mini  --stacktrace
 
       - name: Upload release
         uses: actions/upload-artifact@v2
