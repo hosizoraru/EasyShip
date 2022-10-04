@@ -2,47 +2,46 @@ name: Android CI
 
 on:
   push:
-    branches: [ "alpha" ]
+    branches: ["alpha"]
   pull_request:
-    branches: [ "alpha" ]
+    branches: ["alpha"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
+      - uses: actions/checkout@v3
+      - name: set up JDK 18
+        uses: actions/setup-java@v3
+        with:
+          java-version: "18"
+          distribution: "temurin"
+          cache: gradle
 
-    - uses: actions/cache@v2
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-          !~/.gradle/caches/build-cache-*
-        key: gradle-deps-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: gradle-deps
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            !~/.gradle/caches/build-cache-*
+          key: gradle-deps-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: gradle-deps
 
-    - uses: actions/cache@v2
-      with:
-        path: |
-          ~/.gradle/caches/build-cache-*
-        key: gradle-builds-${{ github.sha }}
-    
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    
-    - name: Build with Gradle
-      run: ./gradlew assembleRelease --stacktrace
-      
-    - name: Upload release
-      uses: actions/upload-artifact@v2
-      with:
-        name: EasyShip_Release
-        path: "app/build/outputs/apk/release/*.apk"
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches/build-cache-*
+          key: gradle-builds-${{ github.sha }}
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease --stacktrace
+
+      - name: Upload release
+        uses: actions/upload-artifact@v2
+        with:
+          name: EasyShip_Release
+          path: "app/build/outputs/apk/release/*.apk"
