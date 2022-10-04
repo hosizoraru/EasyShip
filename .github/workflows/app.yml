@@ -38,8 +38,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew assembleRelease --stacktrace
-        run: ./gradlew assembleRelease_mini  --stacktrace
+        run: ./gradlew :app:packageRelease :app:packageRelease_mini 
 
       - name: Upload release
         uses: actions/upload-artifact@v2
