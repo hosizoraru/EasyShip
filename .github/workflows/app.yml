@@ -39,9 +39,16 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease --stacktrace
+             ./gradlew assembleRelease_mini  --stacktrace
 
       - name: Upload release
         uses: actions/upload-artifact@v2
         with:
           name: EasyShip_Release
           path: "app/build/outputs/apk/release/*.apk"
+
+      - name: Upload release_mini
+        uses: actions/upload-artifact@v2
+        with:
+          name: EasyShip_Release_mini
+          path: "app/build/outputs/apk/release_mini/*.apk"
