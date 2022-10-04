@@ -9,7 +9,7 @@
     <!-- 底部圆角,参数是固定的 -->
     <item>
         <shape>
-            <solid android:color="@color/indicator_color" />
+            <solid android:color="@color/blue_200" />
             <corners
                 android:topLeftRadius="@dimen/dp_20"
                 android:topRightRadius="@dimen/dp_20"/>
